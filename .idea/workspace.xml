@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fa13f1-ccc0-4150-97e3-e49aefa5e591" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/modals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blocks/error-modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blocks/success-modal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
@@ -19,6 +26,14 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,6 +159,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -168,11 +184,71 @@
       <workItem from="1609430156988" duration="1340000" />
       <workItem from="1609439182836" duration="2752000" />
       <workItem from="1609442055638" duration="26000" />
-      <workItem from="1609530758522" duration="476000" />
+      <workItem from="1609530758522" duration="993000" />
+      <workItem from="1609600374807" duration="1215000" />
+      <workItem from="1609602658236" duration="1743000" />
+      <workItem from="1609604502923" duration="1737000" />
+      <workItem from="1609610929773" duration="1849000" />
+      <workItem from="1609612861276" duration="72000" />
+      <workItem from="1609675886475" duration="1696000" />
+      <workItem from="1609677742227" duration="1756000" />
+      <workItem from="1609679629103" duration="1743000" />
+      <workItem from="1609681471452" duration="1740000" />
+      <workItem from="1609683354679" duration="1747000" />
+      <workItem from="1609685278920" duration="1753000" />
+      <workItem from="1609687152049" duration="1733000" />
+      <workItem from="1609688977734" duration="1689000" />
+      <workItem from="1609690830361" duration="1837000" />
+      <workItem from="1609692953945" duration="1726000" />
+      <workItem from="1609694776171" duration="1756000" />
+      <workItem from="1609696676340" duration="797000" />
+      <workItem from="1609698736688" duration="1450000" />
+      <workItem from="1609700599822" duration="1709000" />
+      <workItem from="1609702490513" duration="914000" />
+      <workItem from="1609704641229" duration="1024000" />
+      <workItem from="1609743940115" duration="1673000" />
+      <workItem from="1609745724526" duration="1795000" />
+      <workItem from="1609747599149" duration="786000" />
+      <workItem from="1609749824951" duration="600000" />
+      <workItem from="1609752341569" duration="1294000" />
+      <workItem from="1609756274426" duration="1757000" />
+      <workItem from="1609758124673" duration="1780000" />
+      <workItem from="1609760025840" duration="342000" />
+      <workItem from="1609761540075" duration="1083000" />
+      <workItem from="1609767916921" duration="1382000" />
+      <workItem from="1609769788674" duration="1474000" />
+      <workItem from="1609771612347" duration="1758000" />
+      <workItem from="1609773457620" duration="1786000" />
+      <workItem from="1609775312054" duration="2037000" />
+      <workItem from="1609777410968" duration="1013000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609695608457">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609695608457" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1609682058041">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609682058040" />
+    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1609744655221">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1609744655221" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/blocks/error-modal.blade.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

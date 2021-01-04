@@ -21,4 +21,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::post('/users',[App\Http\Controllers\Users::class, 'getUsersAndFriendsByString'])->name('users');
+
+Route::post('/add_friend',[App\Http\Controllers\UsersFriendsController::class, 'AddFriend']);
 

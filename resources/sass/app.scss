@@ -3,6 +3,88 @@
 
 // Variables
 @import 'variables';
+@import 'modals';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+//$fa-font-path:        "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.df{
+    display: flex;
+}
+
+.dn{
+    display: none;
+}
+
+.tc {
+    text-align: center;
+}
+
+.btn.disabled {
+    cursor: default;
+}
+
+.loading-block{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+
+    &:before{
+        content: "";
+        height: 30px;
+        width: 30px;
+        display: block;
+        background: url(/img/loader.gif) 0 0 no-repeat;
+        background-size: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+}
+
+body {
+    background: #ffffff;
+    color: #000;
+
+    .users-search__search-result {
+        position: relative;
+        min-height: 100px;
+
+        .users-list {
+
+            &__name {
+                font-size: 16px;
+                line-height: 37px;
+            }
+
+            &__item {
+                padding: 10px 0;
+            }
+
+            &__item:not(:last-child) {
+                border-bottom: 1px solid $bdColor1;
+            }
+
+        }
+
+    }
+}
