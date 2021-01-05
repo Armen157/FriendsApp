@@ -61,14 +61,20 @@ ul, li{
 
 }
 
+
 body {
     background: #ffffff;
     color: #000;
 
-    .users-search__search-result {
+    .section-title {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .users-search__search-result,
+    .my-friends-block {
         position: relative;
         min-height: 100px;
-
         .users-list {
 
             &__name {
@@ -85,6 +91,6 @@ body {
             }
 
         }
-
     }
+
 }

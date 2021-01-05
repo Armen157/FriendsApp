@@ -19,6 +19,7 @@ $(function() {
 
 
     function drawUsersList(data) {
+        console.log(data)
         $('.users-search__search-result .loading-block').fadeOut();
         setTimeout(function(){
             $('.users-search__search-result .loading-block').remove()
@@ -54,9 +55,9 @@ $(function() {
                 html+='</div>' +
                     '</li>'
             }
-            $('.users-list').empty().append(html);
+            $('.users-search__search-result .users-list').empty().append(html);
         }else {
-            $('.users-list').empty().append("<li class='tc'>No results</li>");
+            $('.users-search__search-result .users-list').empty().append("<li class='tc'>No results</li>");
         }
 
         //Add friend action

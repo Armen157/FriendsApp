@@ -26,4 +26,15 @@ class UsersFriendsController extends Controller
 
         return redirect()->back()->with('message', 'Success');
     }
+
+    /**
+     * @return \Illuminate\Support\Collection
+     */
+    public static function FriendsList(){
+
+        $id = Auth::id();
+        $friends = friendship::getFriendsList($id);
+        return $friends;
+
+    }
 }

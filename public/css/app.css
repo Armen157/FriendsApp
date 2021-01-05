@@ -17118,21 +17118,30 @@ body {
   color: #000;
 }
 
-body .users-search__search-result {
+body .section-title {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+body .users-search__search-result,
+body .my-friends-block {
   position: relative;
   min-height: 100px;
 }
 
-body .users-search__search-result .users-list__name {
+body .users-search__search-result .users-list__name,
+body .my-friends-block .users-list__name {
   font-size: 16px;
   line-height: 37px;
 }
 
-body .users-search__search-result .users-list__item {
+body .users-search__search-result .users-list__item,
+body .my-friends-block .users-list__item {
   padding: 10px 0;
 }
 
-body .users-search__search-result .users-list__item:not(:last-child) {
+body .users-search__search-result .users-list__item:not(:last-child),
+body .my-friends-block .users-list__item:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
 }
 

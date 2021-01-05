@@ -52,6 +52,7 @@ class User extends Authenticatable
     public static function getAllUsersByString(int $id, string $string){
 
         return DB::table('users')
+                  ->select("id","name","lastname")
                   ->where('id', '!=', "$id")
                   ->where('name', 'like', "$string%")
                   ->orWhere('lastname', 'like', "$string%")

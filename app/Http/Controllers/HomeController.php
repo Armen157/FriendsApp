@@ -23,6 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $friends = UsersFriendsController::FriendsList();
+
+        return view('home',['friends'=>$friends]);
     }
 }

@@ -26,18 +26,20 @@ class friendship extends Model
      * @param $id
      * @return \Illuminate\Support\Collection
      */
-    public static function getFriendsIds($id){
+    public static function getFriendsList($id){
 
         $your_applications = DB::table('friendship')
-            ->select("user_sender_id","status_id")
-            ->where('user_receiver_id',$id)->where(function($query) {
-                $query->where('status_id', 1)->orWhere('status_id',2);
+            ->select("friendship.user_sender_id","friendship.status_id","users.name","users.lastname")
+            ->join('users', 'friendship.user_sender_id', '=', 'users.id')
+            ->where('friendship.user_receiver_id',$id)->where(function($query) {
+                $query->where('friendship.status_id', 1)->orWhere('friendship.status_id',2);
             });
 
         $general_applications = DB::table('friendship')
-            ->select("user_receiver_id","status_id")
-            ->where('user_sender_id',$id)->where(function($query) {
-                $query->where('status_id', 1)->orWhere('status_id',2);
+            ->select("friendship.user_receiver_id","friendship.status_id","users.name","users.lastname")
+            ->join('users', 'friendship.user_receiver_id', '=', 'users.id')
+            ->where('friendship.user_sender_id',$id)->where(function($query) {
+                $query->where('friendship.status_id', 1)->orWhere('friendship.status_id',2);
             })->union($your_applications)->get();
 
 

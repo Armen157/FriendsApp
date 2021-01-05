@@ -25,3 +25,5 @@ Route::post('/users',[App\Http\Controllers\Users::class, 'getUsersAndFriendsBySt
 
 Route::post('/add_friend',[App\Http\Controllers\UsersFriendsController::class, 'AddFriend']);
 
+
+

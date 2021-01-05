@@ -22,7 +22,7 @@ class Users extends Controller
         if($string){
 
             $users = User::getAllUsersByString($id,$string);
-            $friends = friendship::getFriendsIds($id);
+            $friends = friendship::getFriendsList($id);
 
             return ['users'=>$users,'friends'=>$friends];
         }else{

@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fa13f1-ccc0-4150-97e3-e49aefa5e591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/modals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blocks/error-modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blocks/success-modal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersFriendsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersFriendsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/friendship.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/friendship.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +218,13 @@
       <workItem from="1609771612347" duration="1758000" />
       <workItem from="1609773457620" duration="1786000" />
       <workItem from="1609775312054" duration="2037000" />
-      <workItem from="1609777410968" duration="1013000" />
+      <workItem from="1609777410968" duration="1615000" />
+      <workItem from="1609781632852" duration="1533000" />
+      <workItem from="1609783478308" duration="1223000" />
+      <workItem from="1609785334657" duration="731000" />
+      <workItem from="1609836706370" duration="1717000" />
+      <workItem from="1609838519508" duration="1739000" />
+      <workItem from="1609840554946" duration="392000" />
     </task>
     <servers />
   </component>
