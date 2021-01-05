@@ -17123,23 +17123,27 @@ body .section-title {
   margin-bottom: 40px;
 }
 
+body .my-friends-block-inner,
 body .users-search__search-result,
 body .my-friends-block {
   position: relative;
   min-height: 100px;
 }
 
+body .my-friends-block-inner .users-list__name,
 body .users-search__search-result .users-list__name,
 body .my-friends-block .users-list__name {
   font-size: 16px;
   line-height: 37px;
 }
 
+body .my-friends-block-inner .users-list__item,
 body .users-search__search-result .users-list__item,
 body .my-friends-block .users-list__item {
   padding: 10px 0;
 }
 
+body .my-friends-block-inner .users-list__item:not(:last-child),
 body .users-search__search-result .users-list__item:not(:last-child),
 body .my-friends-block .users-list__item:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;

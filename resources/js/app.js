@@ -2,6 +2,8 @@ window.Jquery = require('jquery');
 require('./bootstrap');
 
 $(function() {
+    getFriendsList();
+
     $("input[name=find_friends]").on('input', function(e){
         $.ajax({
             url: "/users",
@@ -18,8 +20,77 @@ $(function() {
     });
 
 
+    function getFriendsList(){
+        $.ajax({
+            url: "/friends",
+            type:'POST',
+            //contentType:'application/json',
+            data: {},
+            beforeSend: function() {
+                $('.my-friends-block-inner').append('<div class="loading-block"></div>');
+            },
+            success: function(data) {
+                drawFriendsList(data);
+            }
+        });
+    }
+
+    function drawFriendsList(data) {
+        const isFriend = 1;
+        let html = '';
+        let friends_list = [];
+        $('.my-friends-block-inner .loading-block').fadeOut();
+        setTimeout(function(){
+            $('.my-friends-block-inner .loading-block').remove()
+        }, 3000);
+        if(data.length){
+            for(let i=0; i < data.length; i++) {
+                if(data[i]['status_id'] === isFriend) {
+                    friends_list.push(data[i])
+                }
+            }
+        }
+
+        if(friends_list.length) {
+            for(let i=0; i < friends_list.length; i++){
+                if(friends_list[i]['status_id'] === isFriend) {
+                    html += '<li class="users-list__item">' +
+                        '<div class="users-list__item-inner df justify-content-between">' +
+                        '<span class="users-list__name">' + friends_list[i]['name'] + ' ' + friends_list[i]['lastname'] + '</span>' +
+                        '<button type="button" class="btn btn-primary remove-friend-btn" data-id="' + friends_list[i]['user_receiver_id'] + '"><i class="fas fa-user-minus"></i> Unfriend</button>' +
+                        '</div>' +
+                        '</li>'
+                }
+            }
+            $('.my-friends-block .users-list').empty().append(html);
+        }else {
+            $('.my-friends-block .users-list').empty().append("<li class='tc'>You don't have friends yet.</li>");
+        }
+
+        //Events
+        //Remove friend
+        $('.remove-friend-btn').on('click', function(e){
+            $.ajax({
+                url: "/remove_friend",
+                type:'POST',
+                //contentType:'application/json',
+                data: {'user_id': $(this).data('id')},
+                beforeSend: function() {
+
+                },
+                success: function(data) {
+
+                    if(data) {
+                        getFriendsList();
+                    }
+
+                }
+            });
+        });
+
+    }
+
     function drawUsersList(data) {
-        console.log(data)
         $('.users-search__search-result .loading-block').fadeOut();
         setTimeout(function(){
             $('.users-search__search-result .loading-block').remove()
@@ -60,6 +131,7 @@ $(function() {
             $('.users-search__search-result .users-list').empty().append("<li class='tc'>No results</li>");
         }
 
+        //Events
         //Add friend action
         $('.add-friend-btn').on('click', function(e){
             if($(this).hasClass('disabled')){

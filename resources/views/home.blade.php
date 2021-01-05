@@ -21,25 +21,11 @@
         <div class="col-md-6">
             <div class="my-friends-block">
                 <p class="section-title">My friends</p>
-                <ul class="users-list">
+                <div class="my-friends-block-inner">
+                    <ul class="users-list">
 
-                    @if (count($friends) > 0)
-                        @foreach($friends AS $friend)
-                            @if($friend->status_id == 1)
-                                <li class="users-list__item">
-                                    <div class="users-list__item-inner df justify-content-between">
-                                        <span class="users-list__name">{{$friend->name}} {{$friend->lastname}}</span>
-                                        <button type="button" class="btn btn-primary add-friend-btn {{$friend->user_receiver_id}}"><i class="fas fa-user-minus"></i> Unfriend</button>
-                                    </div>
-                                </li>
-                            @endif
-                        @endforeach
-                    @else
-                        <li class='tc'>You don't have friends yet.</li>
-                    @endif
-
-                </ul>
-            </div>
+                    </ul>
+                </div>
         </div>
     </div>
 </div>

@@ -4,16 +4,12 @@
     <list default="true" id="28fa13f1-ccc0-4150-97e3-e49aefa5e591" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersFriendsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersFriendsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/friendship.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/friendship.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +220,14 @@
       <workItem from="1609785334657" duration="731000" />
       <workItem from="1609836706370" duration="1717000" />
       <workItem from="1609838519508" duration="1739000" />
-      <workItem from="1609840554946" duration="392000" />
+      <workItem from="1609840554946" duration="1016000" />
+      <workItem from="1609843314039" duration="1522000" />
+      <workItem from="1609845161799" duration="1748000" />
+      <workItem from="1609847302713" duration="1796000" />
+      <workItem from="1609849184573" duration="1136000" />
+      <workItem from="1609851020364" duration="1705000" />
+      <workItem from="1609852943851" duration="2878000" />
+      <workItem from="1609855927490" duration="131000" />
     </task>
     <servers />
   </component>
