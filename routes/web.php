@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\Friends;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +29,10 @@ Route::post('/add_friend',[App\Http\Controllers\UsersFriendsController::class, '
 Route::post('/friends',[App\Http\Controllers\UsersFriendsController::class, 'FriendsList']);
 
 Route::post('/remove_friend',[App\Http\Controllers\UsersFriendsController::class, 'RemoveFriend']);
+
+Route::prefix('request')->group(function (){
+    Route::post('/approve',[App\Http\Controllers\UsersFriendsController::class, 'ApproveFriendRequest']);
+    Route::post('/rejected',[App\Http\Controllers\UsersFriendsController::class, 'RejectedFriendRequest']);
+    Route::post('/list',[App\Http\Controllers\UsersFriendsController::class, 'FriendRequestList']);
+});
 

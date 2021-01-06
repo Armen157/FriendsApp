@@ -19,6 +19,10 @@
   color: #e06363;
 }
 
+.modal__status-icon-box--request i {
+  color: #3490dc;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -17147,5 +17151,30 @@ body .my-friends-block-inner .users-list__item:not(:last-child),
 body .users-search__search-result .users-list__item:not(:last-child),
 body .my-friends-block .users-list__item:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
+}
+
+body .notification-block {
+  position: relative;
+}
+
+body .notification-block .notification-indicator {
+  height: 8px;
+  width: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #e3342f;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body .notification-block .notification-icon {
+  line-height: 40px;
+}
+
+body .notification-block .notification-icon i {
+  font-size: 18px;
 }
 

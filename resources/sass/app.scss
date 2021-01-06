@@ -94,4 +94,28 @@ body {
         }
     }
 
+    .notification-block {
+        position: relative;
+
+        .notification-indicator {
+            height: 8px;
+            width: 8px;
+            display: block;
+            border-radius: 50%;
+            background: $red;
+            position: absolute;
+            top: 0;
+            right: -5px;
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+
+        .notification-icon {
+            line-height: 40px;
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+
 }

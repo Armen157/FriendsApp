@@ -54,6 +54,17 @@
                                 </li>
                             @endif
                         @else
+                            <li class="nav-item">
+                                <div class="notification-block">
+                                    <span class="notification-indicator"></span>
+                                    <span class="notification-icon"><i class="far fa-bell"></i></span>
+                                    <div class="notifications-block__inner dn">
+                                        <ul class="notifications-list">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
@@ -81,12 +92,14 @@
             @yield('content')
         </main>
     </div>
+
     <script>
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
+
     </script>
 
 </body>

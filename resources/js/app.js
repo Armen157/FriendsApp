@@ -4,6 +4,46 @@ require('./bootstrap');
 $(function() {
     getFriendsList();
 
+    $('.request-answer').on('click', function(){
+        let url = null;
+        if($(this).data('alias') === 'reject') {
+            url = '/request/rejected'
+        }else if($(this).data('alias') === 'approve') {
+            url = '/request/approve'
+        }
+
+        if(url !== null) {
+            $.ajax({
+                url: "/request/approve",
+                type:'POST',
+                //contentType:'application/json',
+                data: {friendship_id: $('#request-modal input[name="friendship_id"]').val()},
+                beforeSend: function() {
+
+                },
+                success: function(data) {
+                    $('#request-modal').modal('hide');
+                    $('#success-modal').modal()
+                }
+            });
+        }
+
+        $.ajax({
+            url: url,
+            type:'POST',
+            //contentType:'application/json',
+            data: {friendship_id: $('#request-modal input[name="friendship_id"]').val()},
+            beforeSend: function() {
+
+            },
+            success: function(data) {
+                $('#request-modal').modal('hide');
+                $('#success-modal').modal();
+                getFriendsList();
+            }
+        });
+    })
+
     $("input[name=find_friends]").on('input', function(e){
         $.ajax({
             url: "/users",
@@ -79,8 +119,8 @@ $(function() {
 
                 },
                 success: function(data) {
-
                     if(data) {
+                        $('#success-modal').modal();
                         getFriendsList();
                     }
 

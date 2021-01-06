@@ -31,4 +31,13 @@ class Users extends Controller
 
     }
 
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public static function getUser($id){
+         return  User::find($id);
+    }
+
 }
