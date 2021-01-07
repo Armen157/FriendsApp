@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28fa13f1-ccc0-4150-97e3-e49aefa5e591" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/blocks/request-modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FriendsApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FriendsApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersFriendsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersFriendsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/modals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/modals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blocks/request-modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blocks/request-modal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +245,14 @@
       <workItem from="1609924327611" duration="1753000" />
       <workItem from="1609926186800" duration="1633000" />
       <workItem from="1609928944421" duration="3202000" />
-      <workItem from="1609939104828" duration="1391000" />
+      <workItem from="1609939104828" duration="2151000" />
+      <workItem from="1609941468493" duration="1773000" />
+      <workItem from="1609943335503" duration="1741000" />
+      <workItem from="1609945178352" duration="1915000" />
+      <workItem from="1609952533063" duration="683000" />
+      <workItem from="1609954961065" duration="1717000" />
+      <workItem from="1609956838559" duration="1723000" />
+      <workItem from="1609958686448" duration="841000" />
     </task>
     <task id="LOCAL-00001" summary="remove friend">
       <created>1609856258703</created>

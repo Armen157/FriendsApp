@@ -48,11 +48,6 @@
         channel.bind('Friends', function(data) {
 
             if(auth_user_id == data['user_receiver_id']){
-
-             /*   console.log('***************************************************')
-                console.log(data)
-                console.log(data['friendship_id'])*/
-
                 $('#request-modal .request-sender').html(data['name'] +" "+ data['lastname']);
                 $('#request-modal input[name="friendship_id"]').val(data['friendship_id']);
                 $('#request-modal').modal();

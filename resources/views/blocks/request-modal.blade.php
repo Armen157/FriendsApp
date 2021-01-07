@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5>New friend request!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close close-friend-request-modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>

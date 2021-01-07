@@ -101,8 +101,10 @@ class UsersFriendsController extends Controller
     public function FriendRequestList(){
 
         $user_receiver_id = Auth::id();
-        $list = friendship::where('user_receiver_id', $user_receiver_id)
-                    ->where('status_id',2)
+        $list = friendship::select("friendship.friendship_id","users.name","users.lastname")
+                    ->join('users', 'friendship.user_sender_id', '=', 'users.id')
+                    ->where('friendship.user_receiver_id', $user_receiver_id)
+                    ->where('friendship.status_id',2)
                      ->get();
 
         if($list){

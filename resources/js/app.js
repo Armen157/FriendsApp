@@ -3,36 +3,75 @@ require('./bootstrap');
 
 $(function() {
     getFriendsList();
+    getNotificationList();
 
-    $('.request-answer').on('click', function(){
-        let url = null;
-        if($(this).data('alias') === 'reject') {
-            url = '/request/rejected'
-        }else if($(this).data('alias') === 'approve') {
-            url = '/request/approve'
-        }
+    $('.notification-icon').on('click', function(){
+        $(this).next().fadeToggle();
+    });
 
-        if(url !== null) {
-            $.ajax({
-                url: "/request/approve",
-                type:'POST',
-                //contentType:'application/json',
-                data: {friendship_id: $('#request-modal input[name="friendship_id"]').val()},
-                beforeSend: function() {
+    $('.close-friend-request-modal').on('click', function(){
+        $('#request-modal').modal('hide');
+        getNotificationList();
+    });
 
-                },
-                success: function(data) {
-                    $('#request-modal').modal('hide');
-                    $('#success-modal').modal()
+
+    function getNotificationList(){
+        let html = '';
+        $('.notification-block__inner').hide();
+        $.ajax({
+            url: "/request/list",
+            type:'POST',
+            //contentType:'application/json',
+            data: {},
+            beforeSend: function() {
+
+            },
+            success: function(data) {
+                if(data.length) {
+
+                    $('.notification-indicator').fadeIn();
+
+                        for(let i=0; i < data.length; i++) {
+                            html += '<li class="users-list__item">' +
+                                '<div class="users-list__item-inner df justify-content-between align-items-center">' +
+                                '<span class="notification-list__text">' + data[i]['name'] + ' ' + data[i]['lastname'] + ' sent you a friend request.</span>' +
+                                '<div class="notification-btn-box">' +
+                                '<span class="approve-friend-btn notification-action-btn" data-alias="approve" data-id="' + data[i]['friendship_id'] + '"> <i class="fas fa-check-circle"></i></span>' +
+                                '<span class="reject-friend-btn notification-action-btn" data-alias="reject" data-id="' + data[i]['friendship_id'] + '"> <i class="fas fa-times-circle"></i></span>' +
+                                '</div>' +
+                                '</div>' +
+                                '</li>';
+                        }
+
+                        $('.notifications-list').empty().append(html);
+
+
+                    //Events
+                    $('.notification-action-btn').on('click', function(){
+                        let url = null;
+                        let friendship_id = $(this).data('id');
+                        if($(this).data('alias') === 'approve'){
+                            url = '/request/approve'
+                        }else if($(this).data('alias') === 'reject') {
+                            url = '/request/rejected'
+                        }
+                        friendRequestAnswer(url, friendship_id);
+                    })
+
+                }else{
+                    $('.notification-indicator').hide();
+                    $('.notifications-list').empty().append("<li class='tc'>You don't have notifications yet.</li>");
                 }
-            });
-        }
+            }
+        });
+    }
 
+    function friendRequestAnswer(url, friendship_id){
         $.ajax({
             url: url,
             type:'POST',
             //contentType:'application/json',
-            data: {friendship_id: $('#request-modal input[name="friendship_id"]').val()},
+            data: {friendship_id: friendship_id},
             beforeSend: function() {
 
             },
@@ -42,6 +81,19 @@ $(function() {
                 getFriendsList();
             }
         });
+    }
+
+    $('.request-answer').on('click', function(){
+        let url = null;
+        let friendship_id = $('#request-modal input[name="friendship_id"]').val();
+        if($(this).data('alias') === 'reject') {
+            url = '/request/rejected'
+        }else if($(this).data('alias') === 'approve') {
+            url = '/request/approve'
+        }
+
+        friendRequestAnswer(url, friendship_id);
+
     })
 
     $("input[name=find_friends]").on('input', function(e){
@@ -71,6 +123,7 @@ $(function() {
             },
             success: function(data) {
                 drawFriendsList(data);
+                getNotificationList();
             }
         });
     }

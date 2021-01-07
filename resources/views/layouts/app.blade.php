@@ -58,7 +58,7 @@
                                 <div class="notification-block">
                                     <span class="notification-indicator"></span>
                                     <span class="notification-icon"><i class="far fa-bell"></i></span>
-                                    <div class="notifications-block__inner dn">
+                                    <div class="notification-block__inner dn">
                                         <ul class="notifications-list">
 
                                         </ul>
